@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <input id="display" class="display" type="text" readonly>
+        <div class="button-container">
+            <button class="function-btn" onclick="renderDigit('/')">/</button>
+            <button class="digit-btn" onclick="renderDigit('1')">1</button>
+            <button class="digit-btn" onclick="renderDigit('2')">2</button>
+            <button class="digit-btn" onclick="renderDigit('3')">3</button>
+            <button class="function-btn" onclick="renderDigit('+')">+</button>
+            <button class="digit-btn" onclick="renderDigit('4')">4</button>
+            <button class="digit-btn" onclick="renderDigit('5')">5</button>
+            <button class="digit-btn" onclick="renderDigit('6')">6</button>
+            <button class="function-btn" onclick="renderDigit('-')">-</button>
+            <button class="digit-btn" onclick="renderDigit('7')">7</button>
+            <button class="digit-btn" onclick="renderDigit('8')">8</button>
+            <button class="digit-btn" onclick="renderDigit('9')">9</button>
+            <button  class="function-btn" onclick="renderDigit('*')">*</button>
+            <button class="clear-input" onclick="clearDisplay()">C</button>
+             <button class="digit-btn"  onclick="renderDigit('0')">0</button>
+             <button class="digit-btn" onclick="renderDigit('.')">.</button>
+             <button class="caculate-btn" onclick="caculate()">=</button>
+            <button id="delete-btn" onclick="clearInput()">Del</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
